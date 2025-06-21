@@ -136,18 +136,6 @@ const Contact = () => {
               ))}
             </div>
           </div>
-
-          <div className="bg-gray-800 p-6 rounded-lg">
-            <h3 className="text-xl font-semibold text-green-400 mb-4">
-              Let's Connect
-            </h3>
-            <p className="text-gray-300">
-              I'm always interested in hearing about new opportunities, whether
-              it's a potential collaboration, job opportunity, or just a friendly
-              chat about shared interests. Feel free to reach out through any of
-              the channels above or using the contact form.
-            </p>
-          </div>
         </div>
       </motion.div>
     </div>

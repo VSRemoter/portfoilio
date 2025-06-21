@@ -7,7 +7,10 @@ interface CLIAnimationProps {
 }
 
 const CLIAnimation = ({ onComplete }: CLIAnimationProps) => {
-  const welcomeText = `Welcome to my portfolio site, I hope you find me as a fascinating person. I'm Bob Jones, and I enjoy Quantitative Finance, Data Analytics, Math, Cryptography & Privacy Tools, Programming, and Communicating! Outside of my nerdy side, I absolutely love going to the gym, learning about nutrition and how the brain & body works, and I love playing basketball and strategy games like Backgammon, Chess, and Poker. I think I'm a great mix of being a nerdy kid but also just a fun person to engage with. I have a wide array of interests and find the world a fascinating thing. I hope you enjoy your stay, and find me as an interesting person—whether you're a recruiter looking for your next employee or someone to connect and have a chill chat with.`;
+  const welcomeText = `>Welcome to my portfolio. I'm Shant Bolat — a passionate problem solver with interests in Quantitative Finance, Data Analytics, Math, Cryptography & Privacy Software and Programming.
+> Beyond tech, I have a wide array of interests, I'm big on weightlifting, basketball, fascinated by neuroscience, space, philosophy and love competitive strategy games like Chess, Backgammon, and Poker.
+> I'm a nerd who loves tinkering with software, hardware, building better versions of simple tools (such as LuxPDF!!!) I use everyday, or reverse engineering a tool I find really interesting (like the TOR Browser). I delve everything into deeper detail in my Blog, where I talk about my projects, ideas, or what I learned in detail, answering questions like why I made a tool, why there useful and more! My home page talks about who I am in detail. 
+> Thanks for visiting :)`;
 
   return (
     <motion.div

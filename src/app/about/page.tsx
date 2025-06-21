@@ -10,21 +10,21 @@ const featuredBlogs = [
     title: 'The Beauty of Cryptographic Anonymity',
     excerpt: 'Exploring the fascinating world of cryptographic anonymity and its importance in today\'s digital age.',
     date: '2024-03-15',
-    image: 'https://images.unsplash.com/photo-1633265486064-086b219458ec?w=800&auto=format&fit=crop&q=60',
+    image: '/images/crypto.jpg',
     slug: '/blog/cryptographic-anonymity',
   },
   {
     title: 'Why Backgammon Teaches You Risk Better Than Wall Street',
     excerpt: 'How ancient board games can provide better insights into risk management than traditional financial education.',
     date: '2024-03-10',
-    image: 'https://images.unsplash.com/photo-1611996575749-79a3a250f948?w=800&auto=format&fit=crop&q=60',
+    image: '/images/backgammon.jpg',
     slug: '/blog/backgammon-risk',
   },
   {
     title: 'Mental Models for Quantitative Thinking',
     excerpt: 'Developing powerful mental frameworks for approaching complex quantitative problems.',
     date: '2024-03-05',
-    image: 'https://images.unsplash.com/photo-1635070041078-e363dbe005cb?w=800&auto=format&fit=crop&q=60',
+    image: '/images/quant.jpg',
     slug: '/blog/quantitative-thinking',
   },
 ];
@@ -32,22 +32,21 @@ const featuredBlogs = [
 const About = () => {
   const router = useRouter();
   const technicalInterests = [
-    'Quantitative Finance',
-    'Data Analytics',
-    'Math',
-    'Cryptography/Privacy Tools',
-    'Programming',
-    'Communication',
+    'Data & Statistical Modelling',
+    'Math & Computer Science Topics',
+    'Programming (Python, R, SQL, C, Microsoft Excel)',
+    'Game Theory & Decision Making',
+    'Basic Infrastructure (PostgreSQL, Hosting, Virtual Machines, REST API, Git etc)',
+    'Communications',
   ];
 
   const personalInterests = [
-    'Gym',
-    'Nutrition',
-    'Brain & Body Science',
+    'Gym & Nutrition',
     'Basketball',
-    'Backgammon',
-    'Chess',
-    'Poker',
+    'Cryptography & Privacy Tools',
+    'Machine Learning & Deep Learning',
+    'Strategic Games (Backgammon, Chess, Poker)',
+    'Philosophy',
   ];
 
   const skills = [
@@ -88,51 +87,37 @@ const About = () => {
           <div className="space-y-8">
             <div>
               <h1 className="text-4xl font-bold text-green-400 mb-4">About Me</h1>
+              <p className="text-gray-300 leading-relaxed mb-4">
+                Hi, I'm Shant Bolat a 3rd year at Stevens Institute of Technology, obtaining my Bachelor of Science in Quantitative Finance with a Concentration in Computer Science, so lots of Math, Statistics, and Computer Science subjects I've learned about.
+              </p>
+              <p className="text-gray-300 leading-relaxed mb-4">
+                I absolutely love learning & experimenting with different things. Recently, I've been really into Privacy Tools and Cryptography, things like TOR, Tails OS, Garlic Routing, Monero etc. I even bought an Old Lenovo Thinkpad off eBay to play around with these tools in an attempt to understand how they really work.
+              </p>
               <p className="text-gray-300 leading-relaxed">
-                Welcome to my portfolio site, I hope you find me as a fascinating person. I'm Bob Jones, and I enjoy Quantitative Finance, Data Analytics, Math, Cryptography & Privacy Tools, Programming, and Communicating! Outside of my nerdy side, I absolutely love going to the gym, learning about nutrition and how the brain & body works, and I love playing basketball and strategy games like Backgammon, Chess, and Poker. I think I'm a great mix of being a nerdy kid but also just a fun person to engage with. I have a wide array of interests and find the world a fascinating thing.
+                When I'm not experimenting or learning, I usually play basketball with friends, go to the gym (which I take very seriously, striving for 5-6x a week), read, or experiment with diets, different workouts etc.
               </p>
             </div>
 
             <div>
-              <h2 className="text-2xl font-semibold text-green-400 mb-4">Technical Interests</h2>
-              <div className="flex flex-wrap gap-2">
+              <h2 className="text-2xl font-semibold text-green-400 mb-4">Technical Interests & Skills</h2>
+              <ul className="list-disc pl-6 space-y-2">
                 {technicalInterests.map((interest) => (
-                  <span
-                    key={interest}
-                    className="px-3 py-1 bg-gray-900 rounded-full text-sm"
-                  >
+                  <li key={interest} className="text-gray-300">
                     {interest}
-                  </span>
+                  </li>
                 ))}
-              </div>
+              </ul>
             </div>
 
             <div>
               <h2 className="text-2xl font-semibold text-green-400 mb-4">Personal Interests</h2>
-              <div className="flex flex-wrap gap-2">
+              <ul className="list-disc pl-6 space-y-2">
                 {personalInterests.map((interest) => (
-                  <span
-                    key={interest}
-                    className="px-3 py-1 bg-gray-900 rounded-full text-sm"
-                  >
+                  <li key={interest} className="text-gray-300">
                     {interest}
-                  </span>
+                  </li>
                 ))}
-              </div>
-            </div>
-
-            <div>
-              <h2 className="text-2xl font-semibold text-green-400 mb-4">Skills</h2>
-              <div className="flex flex-wrap gap-2">
-                {skills.map((skill) => (
-                  <span
-                    key={skill}
-                    className="px-3 py-1 bg-green-900/50 text-green-400 rounded-full text-sm"
-                  >
-                    {skill}
-                  </span>
-                ))}
-              </div>
+              </ul>
             </div>
           </div>
         </div>
